@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from '../../components/Public/Navbar'
 
-const ViewCourse = () => {
+const EditCourse = () => {
   return (
     <div>
       <div><Navbar /></div>
-    <div>ViewCourse</div>
+    <div>EditCourse</div>
     </div>
   )
 }
 
-export default ViewCourse
+export default EditCourse

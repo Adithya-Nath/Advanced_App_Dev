@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-    <div>home</div>
+    <div className='text-purple-400 text-center w-screen h-screen text-7xl flex justify-center items-center' >WELCOME TO ONLINE COLLEGE ADMISSION PORTAL</div>
     </div>
   )
 }

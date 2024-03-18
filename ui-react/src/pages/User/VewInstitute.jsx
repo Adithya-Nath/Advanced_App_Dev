@@ -7,4 +7,4 @@ const ViewInstitute = () => {
   )
 }
 
-export default ViewInstitute
+export default ViewInstitute;
