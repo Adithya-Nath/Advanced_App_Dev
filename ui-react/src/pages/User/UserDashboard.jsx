@@ -7,7 +7,6 @@ const UserDashboard = () => {
   return (
     <div>
       <UserNavbar/>
-    <div>UserDashboard</div>
     <div className='flex flex-row items-center gap-7'>
 
       <div>
@@ -31,7 +30,7 @@ const UserDashboard = () => {
       </div>
 
       <div>
-      <Link to="/paymentHistory" className='bg-pink-400  h-[300px] w-[300px] flex justify-center'><div className='text-black flex justify-center items-center'>PAYMENT HISTORY</div></Link>
+      <Link to="/paymentHistory" className='bg-violet-400  h-[300px] w-[300px] flex justify-center'><div className='text-black flex justify-center items-center'>PAYMENT HISTORY</div></Link>
       </div>
 
       </div>

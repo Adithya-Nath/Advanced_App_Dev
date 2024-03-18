@@ -6,8 +6,8 @@ const AdminDashboard = () => {
   return (
     <div>
       <Navbar/>
-    <div>AdminDashboard</div>
-    <div className='flex flex-row items-center gap-7'>
+    <div className='flex flex-row flex-wrap w-screen justify-center mt-[10px] items-center'>
+      <div className='flex flex-row w-[1000px] flex-wrap justify-center gap-7 justify-center mt-[10px] items-center'>
 
       <div>
        <Link to="/addInstitute" className='bg-blue-400 relative h-[300px] w-[300px] flex justify-center'><div className='text-black flex justify-center items-center'>ADD INSTITUTE</div></Link>
@@ -29,6 +29,7 @@ const AdminDashboard = () => {
       <Link to="/viewPayment" className='bg-pink-400  h-[300px] w-[300px] flex justify-center'><div className='text-black flex justify-center items-center'>PAYMENT LIST</div></Link>
       </div>
 
+      </div>
       </div>
     </div>
   )
