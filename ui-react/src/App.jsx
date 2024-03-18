@@ -4,18 +4,27 @@ import ViewCourse from './pages/Admin/EditCourse';
 import Home from './pages/Home';
 import Login from './pages/Auth/Login';
 import Register from './pages/Auth/Register';
+
 import Navbar from './components/Public/Navbar';
+import UserNavbar from './components/Public/UserNavbar';
+
 import AdminDashboard from './pages/Admin/AdminDashboard';
 import AddInstitute from './pages/Admin/AddInstitute';
 import AddCourse from './pages/Admin/AddCourse';
 import EditInstitute from './pages/Admin/EditInstitute';
 import EditCourse from './pages/Admin/EditCourse';
 import ViewStudents from './pages/Admin/ViewStudents';
-import ViewInstitute from './pages/User/VewInstitute';
 import EditAdmissionList from './pages/Admin/EditAdmissionList';
 import ViewPayment from './pages/Admin/ViewPayment';
 
-
+import UserDashboard from './pages/User/UserDashboard';
+import Enrollment from './pages/User/Enrollment';
+import Payment from './pages/User/Payment';
+import PaymentHistory from './pages/User/PaymentHistory';
+import UserProfile from './pages/User/UserProfile';
+import ViewInstitute from './pages/User/ViewInstitute';
+import ViewCourses from './pages/User/ViewCourses';
+import ViewAdmissionStatus from './pages/User/ViewAdmissionStatus';
 
 
 const App = () => {
@@ -27,6 +36,7 @@ const App = () => {
              <Route path="/login" element={<Login/>}/>
              <Route path="/register" element={<Register/>}/>
              <Route path="/navbar" element={<Navbar/>}/>
+             <Route path="/userNavbar" element={<UserNavbar/>}/>
              <Route path="/home" element={<Home />} />
              <Route path="/institute" element={<ViewInstitute/>}/>
              <Route path="/course" element={<ViewCourse/>}/>
@@ -39,6 +49,15 @@ const App = () => {
              <Route path="/studentList" element={<ViewStudents/>}/>
              <Route path="/editAdmissionList" element={<EditAdmissionList/>}/>
              <Route path="/viewPayment" element={<ViewPayment/>}/>
+
+             <Route path="/userDashboard" element={<UserDashboard/>}/>
+             <Route path="/viewInstitute" element={<ViewInstitute/>}/>
+             <Route path="/viewCourses" element={<ViewCourses/>}/>
+             <Route path="/userProfile" element={<UserProfile/>}/>
+             <Route path="/enrollment" element={<Enrollment/>}/>
+             <Route path="/viewAdmissionStatus" element={<ViewAdmissionStatus/>}/>
+             <Route path="/makePayment" element={<Payment/>}/>
+             <Route path="/paymentHistory" element={<PaymentHistory/>}/>
              
 
             </Routes>
