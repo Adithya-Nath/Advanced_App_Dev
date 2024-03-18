@@ -9,7 +9,7 @@ function Navbar() {
           <div className="flex items-center">
             <a href="#" className="text-white text-2xl font-bold">CampusGate</a>
             <div className="hidden md:block ml-10">
-              <a href="/adminhome" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+              <a href="/home" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
               <a href="/adminDashboard" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Dashboard</a>
               <a href="/editInstitute" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Institute</a>
               <a href="/editCourse" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Course</a>

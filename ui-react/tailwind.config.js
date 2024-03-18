@@ -4,7 +4,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage:{
+        'blurBack': "url('./src/assets/images/student-college.jpg')",
+    },
   },
   plugins: [],
+}
 }

@@ -70,7 +70,7 @@ function ViewCourses() {
                 <td className="px-6 py-4 whitespace-nowrap">{course.institution}</td>
                 <td className="px-6 py-4 whitespace-nowrap">
                   <Link
-                    to={`/enrollment/${course.id}`} // Replace with the path to the enrollment page
+                    to={`/enrollment`} // Replace with the path to the enrollment page
                     className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
                   >
                     Enroll

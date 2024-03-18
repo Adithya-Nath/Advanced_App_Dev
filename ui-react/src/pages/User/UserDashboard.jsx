@@ -7,9 +7,10 @@ const UserDashboard = () => {
   return (
     <div>
       <UserNavbar/>
-    <div className='flex flex-row items-center gap-7'>
+      <div className='flex flex-row flex-wrap w-screen justify-center mt-[10px] items-center'>
 
-      <div>
+    <div className='flex flex-row w-[1000px] flex-wrap items-center gap-7 justify-center mt-[10px] '>
+    <div>
        <Link to="/viewInstitute" className='bg-blue-400 relative h-[300px] w-[300px] flex justify-center'><div className='text-black flex justify-center items-center'>VIEW INSTITUTE</div></Link>
       </div>
 
@@ -26,13 +27,13 @@ const UserDashboard = () => {
       </div>
 
       <div>
-      <Link to="/makePayment" className='bg-pink-400  h-[300px] w-[300px] flex justify-center'><div className='text-black flex justify-center items-center'>MAKE PAYMENT</div></Link>
+      <Link to="/payment" className='bg-pink-400  h-[300px] w-[300px] flex justify-center'><div className='text-black flex justify-center items-center'>MAKE PAYMENT</div></Link>
       </div>
 
       <div>
       <Link to="/paymentHistory" className='bg-violet-400  h-[300px] w-[300px] flex justify-center'><div className='text-black flex justify-center items-center'>PAYMENT HISTORY</div></Link>
       </div>
-
+      </div>
       </div>
     </div>
   )

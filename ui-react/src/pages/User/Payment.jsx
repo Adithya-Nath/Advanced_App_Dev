@@ -24,7 +24,7 @@ function Payment() {
     <div>
       <UserNavbar/>
     <div className="max-w-lg mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
-      <h2 className="text-2xl font-semibold mb-4">Submit Payment</h2>
+      <h2 className="text-2xl font-semibold mb-4">Make Payment</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label htmlFor="studentId" className="block text-gray-700 font-medium mb-2">

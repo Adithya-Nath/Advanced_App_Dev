@@ -24,7 +24,7 @@ function ViewAdmissionStatus() {
     <div>
       <UserNavbar/>
     <div className="max-w-7xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
-      <h2 className="text-2xl font-semibold mb-4">Admission Details</h2>
+      <h2 className="text-2xl font-semibold mb-4">Admission Status</h2>
       <div className="overflow-x-auto">
         <table className="min-w-full divide-y divide-gray-200">
           <thead className="bg-gray-50">
@@ -56,7 +56,7 @@ function ViewAdmissionStatus() {
                 <td className="px-6 py-4 whitespace-nowrap">
                   {admission.status === 'Accepted' && (
                     <Link
-                      to={`/payment/${admission.id}`} // Replace with the path to the payment page
+                      to={`/payment`} // Replace with the path to the payment page
                       className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
                     >
                       Make Payment

@@ -29,7 +29,7 @@ function ViewInstitute() {
     <div>
       <UserNavbar/>
     <div className="max-w-7xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
-      <h2 className="text-2xl font-semibold mb-4">Available Institutes</h2>
+      <h2 className="text-2xl font-semibold mb-4">Institutes Available</h2>
       <div className="overflow-x-auto">
         <table className="min-w-full divide-y divide-gray-200">
           <thead className="bg-gray-50">
