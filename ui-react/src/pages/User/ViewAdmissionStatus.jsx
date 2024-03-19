@@ -1,18 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import UserNavbar from '../../components/Public/UserNavbar'; // Assuming you are using React Router for navigation
+import UserNavbar from '../../components/Public/UserNavbar';
+import Footer from '../../components/Public/Footer'; // Assuming you are using React Router for navigation
 
 // Sample data for admission details (replace with actual data)
 const admissionDetails = [
   {
     id: 1,
-    studentName: 'John Doe',
+    studentName: 'Edwin',
     courseName: 'Computer Science',
     status: 'Accepted',
   },
   {
     id: 2,
-    studentName: 'Jane Doe',
+    studentName: 'Atchuthan',
     courseName: 'Electrical Engineering',
     status: 'Application Submitted',
   },
@@ -69,6 +70,10 @@ function ViewAdmissionStatus() {
         </table>
       </div>
     </div>
+    <div className='mt-[320px]'>
+
+<Footer/>
+</div>
     </div>
   );
 }

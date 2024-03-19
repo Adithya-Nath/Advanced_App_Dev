@@ -1,24 +1,25 @@
 import React from 'react';
 import UserNavbar from '../../components/Public/UserNavbar';
+import Footer from '../../components/Public/Footer';
 
 // Sample data for institutes (replace with actual data)
 const institutesData = [
   {
     id: 1,
-    name: 'ABC Institute',
-    location: 'City, Country',
+    name: 'Karpagam institute',
+    location: 'Eechanari, India',
     contactNumber: '123-456-7890',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    email: 'abc@example.com',
+    description: 'IT college',
+    email: 'karpagam@gmail.com',
     numOfCourses: 5,
   },
   {
     id: 2,
-    name: 'XYZ College',
-    location: 'Town, Country',
+    name: 'Nehru College',
+    location: 'Kovaipudur, India',
     contactNumber: '987-654-3210',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    email: 'xyz@example.com',
+    description: 'Arts college',
+    email: 'nehru@gmail.com',
     numOfCourses: 3,
   },
   // Add more institutes as needed
@@ -73,6 +74,9 @@ function ViewInstitute() {
         </table>
       </div>
     </div>
+    <div className='mt-[320px]'>
+      <Footer/>
+      </div>
     </div>
   );
 }

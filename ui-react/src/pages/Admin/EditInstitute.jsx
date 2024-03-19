@@ -2,25 +2,26 @@
 
 import React, { useState } from 'react';
 import Navbar from '../../components/Public/Navbar'
+import Footer from '../../components/Public/Footer';
 
 // Sample data for institutes (replace with actual data)
 const institutesData = [
   {
     id: 1,
-    name: 'ABC University',
-    location: 'New York',
+    name: 'Maharajas College',
+    location: 'Ernakulam',
     contact: '123-456-7890',
     description: 'A prestigious university offering various programs.',
-    email: 'info@abcuniversity.com',
+    email: 'Maharajas@gmail.com',
     courses: 50,
   },
   {
     id: 2,
-    name: 'XYZ College',
-    location: 'Los Angeles',
+    name: 'Emmanuval College',
+    location: 'Kerala',
     contact: '987-654-3210',
     description: 'A leading college providing quality education.',
-    email: 'info@xyzcollege.com',
+    email: 'info@emanuvalcollege.com',
     courses: 30,
   },
   // Add more institutes as needed
@@ -195,6 +196,10 @@ function EditInstitute() {
           </tbody>
         </table>
       </div>
+    </div>
+    <div className='mt-[260px]'>
+
+    <Footer/>
     </div>
     </div>
   );

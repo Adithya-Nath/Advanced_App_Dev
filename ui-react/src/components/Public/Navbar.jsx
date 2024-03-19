@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 function Navbar() {
   return (
-    <nav className="bg-gray-800 shadow-lg ">
+    <nav className=" bg-gray-800 shadow-lg ">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -12,7 +12,8 @@ function Navbar() {
               <a href="/home" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
               <a href="/adminDashboard" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Dashboard</a>
               <a href="/editInstitute" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Institute</a>
-              <a href="/editCourse" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Course</a>
+            <a href="/editCourse" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Course</a>
+            <a href="/contact" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
             </div>
           </div>
           <div className="flex items-center">

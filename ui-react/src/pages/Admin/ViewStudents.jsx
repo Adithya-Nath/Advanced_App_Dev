@@ -6,7 +6,7 @@ const studentsData = [
   {
     id: 1,
     userId: 'AB123',
-    name: 'John Doe',
+    name: 'Arul Edwin',
     gender: 'Male',
     nationality: 'American',
     dob: '1998-05-15',
@@ -20,7 +20,7 @@ const studentsData = [
   {
     id: 2,
     userId: 'CD456',
-    name: 'Jane Smith',
+    name: 'Atchuthan',
     gender: 'Female',
     nationality: 'British',
     dob: '1999-08-20',

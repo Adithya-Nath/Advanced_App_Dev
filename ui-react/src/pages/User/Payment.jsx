@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import UserNavbar from '../../components/Public/UserNavbar';
+import Footer from '../../components/Public/Footer';
 
 function Payment() {
   const [studentId, setStudentId] = useState('');
@@ -108,6 +109,10 @@ function Payment() {
         </button>
       </form>
     </div>
+    <div className='mt-[220px]'>
+
+<Footer/>
+</div>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from '../../components/Public/Navbar';
+import Footer from '../../components/Public/Footer';
 
 // Sample data for courses (replace with actual data)
 const coursesData = [
@@ -8,18 +9,18 @@ const coursesData = [
     name: 'Computer Science',
     description: 'Learn computer programming and software development.',
     duration: '4 years',
-    fees: '$10,000 per year',
+    fees: '$3,000 per year',
     seats: 100,
-    institution: 'ABC University',
+    institution: 'PSG University',
   },
   {
     id: 2,
     name: 'Electrical Engineering',
     description: 'Study electrical circuits and power systems.',
     duration: '4 years',
-    fees: '$12,000 per year',
+    fees: '$3,500 per year',
     seats: 80,
-    institution: 'XYZ College',
+    institution: 'Rajalekshmi College',
   },
   // Add more courses as needed
 ];
@@ -190,6 +191,7 @@ function EditCourse() {
         </table>
       </div>
     </div>
+    <div className='mt-[270px]'><Footer/></div>
     </div>
   );
 }

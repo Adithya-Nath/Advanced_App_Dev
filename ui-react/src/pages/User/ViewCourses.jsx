@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
 import UserNavbar from '../../components/Public/UserNavbar';// Assuming you are using React Router for navigation
-
+import Footer from '../../components/Public/Footer';
 // Sample data for courses (replace with actual data)
 const coursesData = [
   {
@@ -10,18 +10,18 @@ const coursesData = [
     name: 'Computer Science',
     description: 'Learn computer programming and software development.',
     duration: '4 years',
-    fees: '$10,000 per year',
+    fees: '$1500 per year',
     seats: 100,
-    institution: 'ABC University',
+    institution: 'SKCT',
   },
   {
     id: 2,
     name: 'Electrical Engineering',
     description: 'Study electrical circuits and power systems.',
     duration: '4 years',
-    fees: '$12,000 per year',
+    fees: '$1800 per year',
     seats: 80,
-    institution: 'XYZ College',
+    institution: 'Hindusthan College',
   },
   // Add more courses as needed
 ];
@@ -82,6 +82,10 @@ function ViewCourses() {
         </table>
       </div>
     </div>
+    <div className='mt-[270px]'>
+
+<Footer/>
+</div>
     </div>
   );
 }

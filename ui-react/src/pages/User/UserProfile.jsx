@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import UserNavbar from '../../components/Public/UserNavbar';
+import Footer from '../../components/Public/Footer';
 function UserProfile() {
   const [name, setName] = useState('');
   const [gender, setGender] = useState('');
@@ -184,6 +185,10 @@ function UserProfile() {
         </button>
       </form>
     </div>
+    <div className='mt-[270px]'>
+
+<Footer/>
+</div>
     </div>
   );
 }

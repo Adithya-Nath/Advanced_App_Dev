@@ -7,6 +7,9 @@ import Register from './pages/Auth/Register';
 
 import Navbar from './components/Public/Navbar';
 import UserNavbar from './components/Public/UserNavbar';
+import Footer from './components/Public/Footer';
+import Contact from './pages/Contact';
+import AboutUsPage from './pages/Aboutus';
 
 import AdminDashboard from './pages/Admin/AdminDashboard';
 import AddInstitute from './pages/Admin/AddInstitute';
@@ -29,6 +32,7 @@ import ViewAdmissionStatus from './pages/User/ViewAdmissionStatus';
 
 const App = () => {
     return (
+        <div>
         <>
        <BrowserRouter>
        <Routes>
@@ -37,9 +41,12 @@ const App = () => {
              <Route path="/register" element={<Register/>}/>
              <Route path="/navbar" element={<Navbar/>}/>
              <Route path="/userNavbar" element={<UserNavbar/>}/>
+             <Route path="/footer" element={<Footer/>}/>
+             <Route path="/aboutUs" element={<AboutUsPage/>}/>
              <Route path="/home" element={<Home />} />
              <Route path="/institute" element={<ViewInstitute/>}/>
              <Route path="/course" element={<ViewCourse/>}/>
+             <Route path="/contact" element={<Contact/>}/>
 
              <Route path="/adminDashboard" element={<AdminDashboard/>}/>
              <Route path="/addInstitute" element={<AddInstitute/>}/>
@@ -63,6 +70,7 @@ const App = () => {
             </Routes>
        </BrowserRouter>
         </>
+       </div>
     )
 }
 export default App;

@@ -6,13 +6,13 @@ import Navbar from '../../components/Public/Navbar';
 const admissionDetailsData = [
   {
     id: 1,
-    studentName: 'John Doe',
+    studentName: 'Arul Edwin',
     courseName: 'Computer Science',
     status: 'Pending',
   },
   {
     id: 2,
-    studentName: 'Jane Smith',
+    studentName: 'Atchuthan',
     courseName: 'Electrical Engineering',
     status: 'Approved',
   },

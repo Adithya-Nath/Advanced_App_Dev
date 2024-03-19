@@ -1,5 +1,6 @@
 import React from 'react';
 import UserNavbar from '../../components/Public/UserNavbar';
+import Footer from '../../components/Public/Footer';
 
 // Sample data for payment history (replace with actual data)
 const paymentHistory = [
@@ -63,6 +64,10 @@ function PaymentHistory() {
         </table>
       </div>
     </div>
+    <div className='mt-[320px]'>
+
+<Footer/>
+</div>
     </div>
   );
 }

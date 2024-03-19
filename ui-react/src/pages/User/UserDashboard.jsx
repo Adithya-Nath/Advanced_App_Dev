@@ -1,42 +1,36 @@
-import React from 'react'
-import Navbar from '../../components/Public/Navbar'
-import { Link } from 'react-router-dom'
-import UserNavbar from '../../components/Public/UserNavbar'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import UserNavbar from '../../components/Public/UserNavbar';
+import Footer from '../../components/Public/Footer';
 
 const UserDashboard = () => {
   return (
-    <div>
-      <UserNavbar/>
-      <div className='flex flex-row flex-wrap w-screen justify-center mt-[10px] items-center'>
+    <div className="flex flex-col min-h-screen bg-gray-100">
+      <UserNavbar />
+      <div className="flex flex-wrap justify-center items-center mt-10">
 
-    <div className='flex flex-row w-[1000px] flex-wrap items-center gap-7 justify-center mt-[10px] '>
-    <div>
-       <Link to="/viewInstitute" className='bg-blue-400 relative h-[300px] w-[300px] flex justify-center'><div className='text-black flex justify-center items-center'>VIEW INSTITUTE</div></Link>
+        <div className="flex flex-wrap justify-center items-center gap-7 mt-10 w-full max-w-6xl mx-auto mb-5">
+          <DashboardItem link="/viewInstitute" color="bg-blue-400" text="VIEW INSTITUTE" />
+          <DashboardItem link="/viewCourses" color="bg-green-400" text="VIEW COURSE" />
+          <DashboardItem link="/userProfile" color="bg-red-400" text="ADD STUDENT PROFILE" />
+          <DashboardItem link="/viewAdmissionStatus" color="bg-yellow-400" text="CHECK ADMISSION STATUS" />
+          <DashboardItem link="/payment" color="bg-pink-400" text="MAKE PAYMENT" />
+          <DashboardItem link="/paymentHistory" color="bg-violet-400" text="PAYMENT HISTORY" />
+        </div>
       </div>
-
-      <div >
-      <Link to="/viewCourses" className='bg-green-400 relative h-[300px] w-[300px] flex justify-center'><div className='text-black flex justify-center items-center '>VIEW COURSE</div></Link>
-      </div>
-
-      <div>
-      <Link to="/userProfile" className='bg-red-400 relative h-[300px] w-[300px] flex justify-center'><div className='text-black  flex justify-center items-center'>ADD STUDENT PROFILE</div></Link>
-      </div>
-
-      <div>
-      <Link to="/viewAdmissionStatus" className='bg-yellow-400 relative h-[300px] w-[300px] flex justify-center'><div className='text-black flex justify-center items-center'>CHECK ADMISSION STATUS</div></Link>
-      </div>
-
-      <div>
-      <Link to="/payment" className='bg-pink-400  h-[300px] w-[300px] flex justify-center'><div className='text-black flex justify-center items-center'>MAKE PAYMENT</div></Link>
-      </div>
-
-      <div>
-      <Link to="/paymentHistory" className='bg-violet-400  h-[300px] w-[300px] flex justify-center'><div className='text-black flex justify-center items-center'>PAYMENT HISTORY</div></Link>
-      </div>
-      </div>
-      </div>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default UserDashboard
+const DashboardItem = ({ link, color, text }) => {
+  return (
+    <div className={`relative ${color} h-48 w-48 md:h-64 md:w-64 flex justify-center items-center`}>
+      <Link to={link} className="text-black flex justify-center items-center w-full h-full">
+        <div className="text-center">{text}</div>
+      </Link>
+    </div>
+  );
+}
+
+export default UserDashboard;

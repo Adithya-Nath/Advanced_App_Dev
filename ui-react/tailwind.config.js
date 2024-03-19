@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       backgroundImage:{
-        'blurBack': "url('./src/assets/images/student-college.jpg')",
+        'blurBack': "url('./src/assets/images/celeb.jpg')",
     },
   },
   plugins: [],
