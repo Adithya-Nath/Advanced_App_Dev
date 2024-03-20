@@ -29,9 +29,9 @@ const AdminDashboard = () => {
 const DashboardItem = ({ image, link, text }) => {
   return (
     <Link to={link} className="relative bg-transparent h-48 md:h-64 flex flex-col justify-between items-center p-4">
-      <div className="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
+      <div className="absolute inset-0 bg-white opacity-50 rounded-lg"></div>
       <img src={image} alt={text} className="w-auto h-auto max-w-full max-h-full object-cover z-10" />
-      <div className="text-red-800 text-center z-20 font-medium" >{text}</div>
+      <div className="text-black-800 text-center z-20 font-medium" >{text}</div>
     </Link>
   );
 }
