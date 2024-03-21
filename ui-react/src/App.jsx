@@ -10,6 +10,7 @@ import UserNavbar from './components/Public/UserNavbar';
 import Footer from './components/Public/Footer';
 import Contact from './pages/Contact';
 import AboutUsPage from './pages/Aboutus';
+import NotFound from './pages/Error404';
 
 import AdminDashboard from './pages/Admin/AdminDashboard';
 import AddInstitute from './pages/Admin/AddInstitute';
@@ -47,6 +48,7 @@ const App = () => {
              <Route path="/institute" element={<ViewInstitute/>}/>
              <Route path="/course" element={<ViewCourse/>}/>
              <Route path="/contact" element={<Contact/>}/>
+             <Route path="/error" element={<NotFound/>}/>
 
              <Route path="/adminDashboard" element={<AdminDashboard/>}/>
              <Route path="/addInstitute" element={<AddInstitute/>}/>

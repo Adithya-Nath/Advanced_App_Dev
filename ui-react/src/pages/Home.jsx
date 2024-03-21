@@ -11,7 +11,7 @@ function Home() {
       <div className="min-h-screen flex flex-col justify-center items-center"
         style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="bg-black bg-opacity-50 p-8 rounded-lg shadow-lg text-center">
-          <h1 className="text-4xl font-bold text-white mb-8">WELCOME TO ONLINE COLLEGE ADMISSION PORTAL</h1>
+          <h1 className="text-3xl font-bold text-white mb-8">SUCCESS STARTS WITH A SINGLE STEP-TAKE THE FIRST STEP TOWARDS YOUR FUTURE</h1>
           <p className="text-lg text-white mb-8">SIMPLIFY YOUR ADMISSION PROCESS WITH CAMPUS GATE</p>
           <div className="flex flex-col items-center space-y-4">
            <Link to={"/aboutUs"}><button className="bg-white text-blue-500 hover:bg-blue-400 hover:text-white px-6 py-3 rounded-lg font-semibold shadow-md">
