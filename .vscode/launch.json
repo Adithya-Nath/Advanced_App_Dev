@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-CampusgateApplication<campusgate>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.adhi.campusgate.CampusgateApplication",
+            "projectName": "campusgate",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
